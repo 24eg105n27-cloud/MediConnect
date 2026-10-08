@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4fbff;
+  color: #123b4a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 80px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 100, 140, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0784ad, #00b5d2);
+  font-size: 25px;
+}
+
+.logo h2 {
+  color: #087c9f;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  padding: 11px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn {
+  border: 1px solid #0784ad;
+  background: white;
+  color: #0784ad;
+}
+
+.register-btn {
+  border: none;
+  background: linear-gradient(135deg, #0784ad, #00b5d2);
+  color: white;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 560px;
+  padding: 70px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(135deg, #e8f8ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #dff7ff;
+  color: #0784ad;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #0784ad;
+}
+
+.hero p {
+  color: #617983;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.start-btn,
+.outline-btn {
+  padding: 15px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-btn {
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #0784ad, #00b5d2);
+  box-shadow: 0 10px 25px rgba(0, 160, 200, 0.25);
+}
+
+.outline-btn {
+  border: 2px solid #0784ad;
+  color: #0784ad;
+  background: white;
+}
+
+
+/* DOCTOR CARD */
+
+.doctor-card {
+  width: 360px;
+  padding: 35px;
+  text-align: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px rgba(0, 100, 140, 0.15);
+  transform: rotate(1deg);
+}
+
+.doctor-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e4f8ff;
+  font-size: 65px;
+}
+
+.doctor-card h2 {
+  margin-bottom: 10px;
+}
+
+.doctor-card > p {
+  color: #71858d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f4fbff;
+}
+
+.card-info span {
+  font-size: 25px;
+}
+
+.card-info strong,
+.card-info small {
+  display: block;
+}
+
+.card-info small {
+  margin-top: 4px;
+  color: #78909c;
+}
+
+
+/* FEATURES */
+
+.features {
+  padding: 70px 8%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: white;
+}
+
+.feature-card {
+  width: 30%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: #f8fdff;
+  border: 1px solid #e2f1f5;
+  box-shadow: 0 10px 30px rgba(0, 100, 140, 0.08);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 100, 140, 0.15);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #71858d;
+  line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #78909c;
+  background: #eefaff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero p {
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .doctor-card {
+    width: 90%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+}
